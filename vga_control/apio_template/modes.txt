@@ -1,0 +1,12 @@
+Mode 1) 640x480@60hz: 25MHz pixel clock, 200MHz base clock
+        3-bit DAC
+Mode 2) 800x600@60hz: 40MHz pixel clock, 160MHz base clock
+        2-bit DAC
+Mode 3) 1024x768@60hz: 65MHz pixel clock, 260MHz base clock
+        2-bit DAC
+Mode 4) 1280x1024@60hz: 108MHz pixel clock, 216MHz base clock
+        1-bit DAC
+
+Each RGB channel should output to a physical circuit, starting with a 20%
+voltage divider, leading to a lowpass filter, which should have a time constant
+in the vicinity of 1.59E-7.
